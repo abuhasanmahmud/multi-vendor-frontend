@@ -12,7 +12,7 @@ const SignUp = () => {
   const [password, setPassword] = useState("");
   const [visible, setVisible] = useState(false);
   const [avatar, setAvatar] = useState(null);
-  // console.log("done");
+  console.log("done");
 
   const handleFileInputChange = (e) => {
     const reader = new FileReader();
