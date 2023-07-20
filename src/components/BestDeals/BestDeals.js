@@ -5,6 +5,7 @@ import ProductCard from "../src/ProductCard/ProductCard";
 
 const BestDeals = () => {
   const [data, setData] = useState([]);
+  console.log("ss");
   const { allProducts } = useSelector((state) => state.products);
   useEffect(() => {
     const allProductsData = allProducts ? [...allProducts] : [];
