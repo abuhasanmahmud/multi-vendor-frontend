@@ -5,6 +5,7 @@ import Header from "../components/Layout/Header";
 
 const EventsPage = () => {
   //   const { allEvents, isLoading } = useSelector((state) => state.events);
+  console.log("ss");
   return (
     <>
       <div>
