@@ -15,7 +15,8 @@ import { RxCross1 } from "react-icons/rx";
 
 const Header = ({ activeHeading }) => {
   //   const { isAuthenticated, user } = useSelector((state) => state.user);
-  //   const { isSeller } = useSelector((state) => state.seller);
+  // const { isSeller } = useSelector((state) => state.seller);
+  const isSeller = true;
   //   const { wishlist } = useSelector((state) => state.wishlist);
   //   const { cart } = useSelector((state) => state.cart);
   //   const { allProducts } = useSelector((state) => state.products);
@@ -38,11 +39,11 @@ const Header = ({ activeHeading }) => {
   };
 
   window.addEventListener("scroll", () => {
-    //     if (window.scrollY > 70) {
-    //       setActive(true);
-    //     } else {
-    //       setActive(false);
-    //     }
+    if (window.scrollY > 70) {
+      setActive(true);
+    } else {
+      setActive(false);
+    }
   });
 
   return (
@@ -86,11 +87,11 @@ const Header = ({ activeHeading }) => {
           </div>
 
           <div className={`${styles.button}`}>
-            {/* <Link to={`${isSeller ? "/dashboard" : "/shop-create"}`}>
+            <Link to={`${isSeller ? "/dashboard" : "/shop-create"}`}>
               <h1 className="text-[#fff] flex items-center">
                 {isSeller ? "Go Dashboard" : "Become Seller"} <IoIosArrowForward className="ml-1" />
               </h1>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>
