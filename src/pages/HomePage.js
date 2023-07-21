@@ -3,6 +3,7 @@ import Header from "../components/Layout/Header";
 import Hero from "../components/Hero/Hero";
 import Categories from "../components/Categories/Categories";
 import BestDeals from "../components/BestDeals/BestDeals";
+import Events from "../components/Events/Events";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <Hero />
       <Categories />
       <BestDeals />
+      <Events />
     </div>
   );
 };
