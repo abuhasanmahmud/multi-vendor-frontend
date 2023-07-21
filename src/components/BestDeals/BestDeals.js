@@ -14,7 +14,7 @@ const BestDeals = () => {
   //   setData(firstFive);
   // }, [allProducts]);
 
-  const bestDelasProduct = productData.slice(0, 5);
+  const bestDelasProduct = productData.filter((product) => product.discount > 0);
 
   return (
     <div>
