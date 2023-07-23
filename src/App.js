@@ -9,6 +9,7 @@ import {
   ProductsPage,
   RegisterPage,
 } from "./Routes.js";
+
 function App() {
   return (
     <BrowserRouter>

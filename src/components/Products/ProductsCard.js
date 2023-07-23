@@ -9,12 +9,13 @@ import {
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import styles from "../../../src/styles/styles";
-// import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 // import ProductDetailsCard from "../ProductDetailsCard/ProductDetailsCard";
 // import { addToWishlist, removeFromWishlist } from "../../../redux/actions/wishlist";
 import { useEffect } from "react";
 // import { addTocart } from "../../../redux/actions/cart";
 import { toast } from "react-toastify";
+import { addToCart } from "../../features/cart/cartSlice";
 // import Ratings from "../../Products/Ratings";
 
 const ProductCard = ({ data, isEvent }) => {
@@ -23,7 +24,7 @@ const ProductCard = ({ data, isEvent }) => {
   //   const { cart } = useSelector((state) => state.cart);
   const [click, setClick] = useState(false);
   const [open, setOpen] = useState(false);
-  //   const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     //     if (wishlist && wishlist.find((i) => i._id === data._id)) {
@@ -117,7 +118,7 @@ const ProductCard = ({ data, isEvent }) => {
           <AiOutlineShoppingCart
             size={25}
             className="cursor-pointer absolute right-2 top-24"
-            //   onClick={() => addToCartHandler(data._id)}
+            onClick={() => dispatch(addToCart(data))}
             color="#444"
             title="Add to cart"
           />

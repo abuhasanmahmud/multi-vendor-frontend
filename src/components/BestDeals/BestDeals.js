@@ -5,7 +5,7 @@ import ProductsCard from "../Products/ProductsCard";
 import { productData } from "../../static/data";
 const BestDeals = () => {
   const [data, setData] = useState([]);
-  console.log("product data", productData);
+  // console.log("product data", productData);
 
   // useEffect(() => {
   //   const allProductsData = allProducts ? [...allProducts] : [];
