@@ -9,7 +9,7 @@ import Sponsored from "../components/Sponsored/Sponsored";
 import Footer from "../components/Layout/Footer/Footer";
 
 const HomePage = () => {
-  console.log("a");
+  // console.log("a");
   return (
     <div>
       <Header />
